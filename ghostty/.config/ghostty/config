@@ -23,7 +23,7 @@ shell-integration-features = no-cursor,no-title,sudo,ssh-env
 # Interaction
 mouse-hide-while-typing = true
 copy-on-select = clipboard
-mouse-scroll-multiplier = 7.0
+mouse-scroll-multiplier = 3.5
 
 # Free Alt+number for other uses (tmux, etc.)
 keybind = alt+zero=unbind
