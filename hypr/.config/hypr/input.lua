@@ -5,6 +5,9 @@ hl.config({
   input = {
     -- Turn off mouse acceleration (default: adaptive).
     accel_profile = "flat",
+
+    -- Caps Lock as an extra Ctrl key (replaces Omarchy's compose:caps).
+    kb_options = "ctrl:nocaps",
   },
 })
 
