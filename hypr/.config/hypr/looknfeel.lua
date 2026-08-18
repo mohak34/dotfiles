@@ -3,8 +3,8 @@
 -- Tight window gaps (from previous setup).
 hl.config({
   general = {
-    gaps_in = 1,
-    gaps_out = 2,
+    gaps_in = 0,
+    gaps_out = 0,
   },
 })
 
