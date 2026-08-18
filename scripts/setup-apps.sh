@@ -7,4 +7,5 @@ if gum confirm "Run personal app setup (remove unneeded apps, install your apps,
   "$(dirname "$0")/apps-repo.sh"
   "$(dirname "$0")/apps-aur.sh"
   "$(dirname "$0")/stow-dotfiles.sh"
+  "$(dirname "$0")/cursor-gtk.sh"
 fi
