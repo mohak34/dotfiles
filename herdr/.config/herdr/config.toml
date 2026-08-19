@@ -31,9 +31,9 @@ split_horizontal = ["prefix+h", "alt+enter"]
 split_vertical = ["prefix+v", "alt+shift+enter"]
 close_pane = ["prefix+x", "alt+esc"]
 zoom = "prefix+z"
-last_pane = "prefix+;"
+last_pane = ["prefix+;", "ctrl+backspace"]
 
-focus_pane_left = ["ctrl+alt+left", "ctrl+backspace"]
+focus_pane_left = "ctrl+alt+left"
 focus_pane_down = "ctrl+alt+down"
 focus_pane_up = "ctrl+alt+up"
 focus_pane_right = "ctrl+alt+right"
