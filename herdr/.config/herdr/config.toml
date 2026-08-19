@@ -31,12 +31,16 @@ split_horizontal = ["prefix+h", "alt+enter"]
 split_vertical = ["prefix+v", "alt+shift+enter"]
 close_pane = ["prefix+x", "alt+esc"]
 zoom = "prefix+z"
-last_pane = ["prefix+;", "ctrl+backspace"]
+last_pane = "prefix+;"
 
-focus_pane_left = "ctrl+alt+left"
-focus_pane_down = "ctrl+alt+down"
-focus_pane_up = "ctrl+alt+up"
-focus_pane_right = "ctrl+alt+right"
+# ctrl+backspace wraps around like tmux's select-pane -L: from the right side it
+# lands on the left pane; from the left it wraps back to the right side.
+cycle_pane_previous = "ctrl+backspace"
+
+focus_pane_left = ["ctrl+alt+left", "ctrl+h"]
+focus_pane_down = ["ctrl+alt+down", "ctrl+j"]
+focus_pane_up = ["ctrl+alt+up", "ctrl+k"]
+focus_pane_right = ["ctrl+alt+right", "ctrl+l"]
 
 resize_mode = ["prefix+ctrl+left", "prefix+ctrl+down", "prefix+ctrl+up", "prefix+ctrl+right"]
 
