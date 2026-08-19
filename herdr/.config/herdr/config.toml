@@ -94,8 +94,13 @@ prompt_new_tab_name = false
 # set -g mouse on
 mouse_capture = true
 
-# status-right had the zoom flag followed by #h
-tab_bar_right = [{ type = "zoom" }, { type = "hostname" }]
+# status-right showed zoom flag, working dir, then #h
+tab_bar_right = [
+    { type = "zoom" },
+    { type = "command", command = "pwd", interval_seconds = 1, timeout_seconds = 1 },
+    { type = "hostname" },
+]
+tab_bar_right_separator = " · "
 
 # set -g set-titles on / set -g set-titles-string '#h:#W', where tmux's #W was
 # the basename of the pane cwd. This is what Hyprland shows in the group bar,
