@@ -75,6 +75,9 @@ next_workspace = ["prefix+shift+n", "alt+down"]
 [ui]
 accent = "blue"
 
+# tmux drew its status line along the bottom edge
+tab_bar_position = "bottom"
+
 # tmux drew single-line dividers between adjacent panes and no outer frame
 pane_gaps = false
 pane_outer_borders = false
