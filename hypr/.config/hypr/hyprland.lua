@@ -30,3 +30,6 @@ require("default.hypr.toggles")
 
 -- Cursor theme for Hyprland + Wayland apps (GTK handled by cursor-gtk.sh).
 hl.env("XCURSOR_THEME", "Bibata-Modern-Ice")
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
+hl.env("HYPRCURSOR_SIZE", "24")

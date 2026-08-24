@@ -14,7 +14,12 @@ if [[ ! -e "$HOME/.config/environment.d/10-cursor.conf" ]]; then
   stow -d "$DOTFILES_DIR" environment
 fi
 
-systemctl --user import-environment XCURSOR_THEME XCURSOR_SIZE
-dbus-update-activation-environment --systemd XCURSOR_THEME XCURSOR_SIZE 2>/dev/null
+# Load vars from environment.d into current shell so import works even after reboot-edit
+if [[ -f "$HOME/.config/environment.d/10-cursor.conf" ]]; then
+  set -a; source "$HOME/.config/environment.d/10-cursor.conf"; set +a
+fi
+
+systemctl --user import-environment XCURSOR_THEME XCURSOR_SIZE HYPRCURSOR_THEME HYPRCURSOR_SIZE
+dbus-update-activation-environment --systemd XCURSOR_THEME XCURSOR_SIZE HYPRCURSOR_THEME HYPRCURSOR_SIZE 2>/dev/null
 
 echo "Cursor env applied: Bibata-Modern-Ice (24px). Restart affected apps to see it."
