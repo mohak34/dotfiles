@@ -34,8 +34,11 @@ Bad vs good:
 - Tests focused, not slop. No endless smoke tests or regression tests for deleted features.
 - Comments clarify. Short note above a function or type explaining how it's used beats a comment every line.
 - Keep comments in sync. Stale comments are worse than none.
-- Commit messages: conventional commits (`feat:`, `fix:`, `refactor:`, `docs:`).
+- Commit messages: conventional commits (`feat:`, `fix:`, `refactor:`, `docs:`, `chore:`). One line, short.
 - Commit after each feature or bug fix. Small, rolling commits beat one big blob: if something breaks, we reset to the last good commit instead of hunting through an hour of changes.
+- Commit, never push. Push only when I say push.
+- Prove it works. After any task, verify against the real artifact, never a proxy or a self-report.
+- Never start a dev server unless I ask for it.
 
 ## TypeScript
 
@@ -45,10 +48,19 @@ Bad vs good:
 - Preferred stack unless the project says otherwise: Convex, Tailwind, React, Vite, pnpm.
 - For complex web and React Native apps: Zustand, React Query, Tanstack Start, Clerk (or better-auth if self-hosted), ArkType (or zod when perf isn't a concern).
 
+## Python
+
+- uv is the only tool. Projects, venvs, installs, runs, everything through uv.
+- Never pip, venv, virtualenv, conda, or poetry. `uv venv`, `uv add`, `uv run`, `uv sync`.
+- One project gets one venv at its root. No global installs.
+- Ruff for lint and format, nothing else.
+- Type-check with ty. Annotate everything, untyped defs are tech debt.
+
 ## Visual and design work
 
 - Do not edit real components first. For any non-trivial UI, layout, or copy change, build several distinct static mocks, save them as standalone HTML files I can open, report the paths, and stop. Wait for a pick before implementing.
 - Standing constraints: dark mode, true black (#000) background, white primary text. Information-dense, no decorative card/pill chrome, no light-gray subtitle lines above sections. Minimal copy.
+- No emojis anywhere. Not in UI, code, commits, or docs. Where an icon is needed, use Material Symbols.
 - Avoid continuously repainting CSS animations (pulse, shimmer, blur, spinners); they peg the GPU on high-refresh displays.
 
 ## Environment
@@ -68,3 +80,8 @@ Bad vs good:
 - Say what a system-changing command does in one line before running it. I confirm destructive things.
 - Simpler approach wins. Say why.
 - Give me copyable commands, not narrations.
+
+## Fleet (classis)
+
+- Fleet truth is `~/classis/devices.md`, read it when machines matter.
+- Ampere (dietpanda) is Tailnet-only. Never open public ports. Previews via `tailscale serve`.
