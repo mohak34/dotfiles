@@ -75,6 +75,7 @@ Bad vs good:
 
 ## How I work
 
+- Use web search when facts can change. Versions, APIs, docs, pricing, recent events. Do not answer those from memory alone.
 - Prefer omarchy commands over hand-editing config when one exists.
 - Skills live in ~/.agents/skills/. If one matches what I mean, use it without asking which one.
 - unslop applies to anything you write for me.
