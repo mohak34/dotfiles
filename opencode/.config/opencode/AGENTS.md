@@ -39,6 +39,9 @@ Bad vs good:
 - Commit, never push. Push only when I say push.
 - Prove it works. After any task, verify against the real artifact, never a proxy or a self-report.
 - Never start a dev server unless I ask for it.
+- Kill precisely. Never `pkill -f` or kill by name/path match. Kill only a PID captured at spawn, or the port owner (e.g. `fuser -k PORT/tcp`).
+- Smallest proof. Run only the tests and checks for what changed, never repo-wide suites unless I ask.
+- Docs: when behavior changes, rewrite the affected text. Do not append another account of the new behavior.
 
 ## TypeScript
 
