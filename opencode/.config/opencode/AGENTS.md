@@ -85,3 +85,4 @@ Bad vs good:
 
 - Fleet truth is `~/classis/devices.md`, read it when machines matter.
 - Ampere (dietpanda) is Tailnet-only. Never open public ports. Previews via `tailscale serve`.
+- Preview rule (any box): dev servers bind `127.0.0.1` only, never `0.0.0.0`. On dietpanda reuse the preview port in `devices.md`; check `tailscale serve status` before adding ports.
