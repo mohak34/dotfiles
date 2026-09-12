@@ -57,3 +57,13 @@ hl.config({
 --     column_width = 0.97,
 --   },
 -- })
+
+-- Scrolling layout: two columns by default, SUPER+PERIOD cycles the presets.
+-- Fit (not center) so end columns sit gap-free at the tape edges.
+hl.config({
+  scrolling = {
+    column_width = 0.49,
+    explicit_column_widths = "0.2, 0.5, 0.8, 1.0",
+    focus_fit_method = 1,
+  },
+})

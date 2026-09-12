@@ -33,3 +33,7 @@ local removed_preinstalled = {
 for _, keys in ipairs(removed_preinstalled) do
   hl.unbind(keys)
 end
+
+-- Scrolling layout: cycle the active column through preset widths.
+o.bind("SUPER + PERIOD", "Cycle scrolling column wider", hl.dsp.layout("colresize +conf"))
+o.bind("SUPER + SHIFT + PERIOD", "Cycle scrolling column narrower", hl.dsp.layout("colresize -conf"))
