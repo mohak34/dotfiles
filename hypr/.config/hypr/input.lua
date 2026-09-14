@@ -74,5 +74,5 @@ hl.device({
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 
 -- Four-finger left/right moves focus (three fingers are workspaces, above).
-hl.gesture({ fingers = 4, direction = "left", action = function() hl.dispatch(hl.dsp.focus({ direction = "l" })) end })
-hl.gesture({ fingers = 4, direction = "right", action = function() hl.dispatch(hl.dsp.focus({ direction = "r" })) end })
+hl.gesture({ fingers = 4, direction = "left", action = function() hl.dispatch(hl.dsp.focus({ direction = "r" })) end })
+hl.gesture({ fingers = 4, direction = "right", action = function() hl.dispatch(hl.dsp.focus({ direction = "l" })) end })
