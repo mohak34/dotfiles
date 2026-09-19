@@ -48,8 +48,8 @@ Bad vs good:
 - any is the enemy. Inferred types are the friend. Types adapt to change instead of requiring changes everywhere.
 - If TS reads like a Python dev wrote it, it's bad TS.
 - No one-line functions that exist only to cast.
-- Preferred stack unless the project says otherwise: Convex, Tailwind, React, Vite, pnpm.
-- For complex web and React Native apps: Zustand, React Query, Tanstack Start, Clerk (or better-auth if self-hosted), ArkType (or zod when perf isn't a concern).
+- Preferred stack unless the project says otherwise: Convex, Tailwind, SvelteKit, bun.
+- For complex web apps: Svelte runes for state, TanStack Query (Svelte adapter) for server state, better-auth (self-hosted), ArkType (or zod when perf isn't a concern).
 
 ## Python
 
