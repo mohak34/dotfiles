@@ -96,6 +96,7 @@ Bad vs good:
 - No one-line functions that exist only to cast.
 - Preferred stack unless the project says otherwise: Convex, Tailwind, SvelteKit, bun.
 - For complex web apps: Svelte runes for state, TanStack Query (Svelte adapter) for server state, better-auth (self-hosted), zod for validation.
+- Database: Postgres with Drizzle ORM (better-auth via its Drizzle adapter). SQLite only for throwaway local tools.
 
 ## Python
 
