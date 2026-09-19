@@ -1,0 +1,5 @@
+# Bun global binaries for Hyprland/uwsm session
+case ":$PATH:" in
+  *":$HOME/.cache/.bun/bin:"*) ;;
+  *) export PATH="$HOME/.cache/.bun/bin:$PATH" ;;
+esac
